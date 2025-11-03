@@ -202,9 +202,7 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
-                    <div class="p-2 bg-emerald-600 rounded-lg">
-                        <i data-lucide="code-square" class="w-6 h-6 text-white"></i>
-                    </div>
+                    <img src="profile pic.png" alt="GFG Logo" class="w-10 h-10 rounded-lg object-cover">
                     <span class="text-xl font-bold text-white">GFG Galgotias</span>
                 </div>
                 
@@ -335,19 +333,19 @@
                     <div class="bg-gradient-to-br from-emerald-500/20 to-blue-500/20 rounded-2xl p-8 border border-emerald-500/30">
                         <div class="grid grid-cols-2 gap-6 text-center">
                             <div>
-                                <div class="text-3xl font-bold text-emerald-400 counter" data-target="500">0</div>
+                                <div class="text-3xl font-bold text-emerald-400 counter code-font" data-target="500">0</div>
                                 <div class="text-gray-300 text-sm">Active Members</div>
                             </div>
                             <div>
-                                <div class="text-3xl font-bold text-emerald-400 counter" data-target="50">0</div>
+                                <div class="text-3xl font-bold text-emerald-400 counter code-font" data-target="50">0</div>
                                 <div class="text-gray-300 text-sm">Projects Built</div>
                             </div>
                             <div>
-                                <div class="text-3xl font-bold text-emerald-400 counter" data-target="100">0</div>
+                                <div class="text-3xl font-bold text-emerald-400 counter code-font" data-target="70">0</div>
                                 <div class="text-gray-300 text-sm">Events Hosted</div>
                             </div>
                             <div>
-                                <div class="text-3xl font-bold text-emerald-400 counter" data-target="25">0</div>
+                                <div class="text-3xl font-bold text-emerald-400 counter code-font" data-target="20">0</div>
                                 <div class="text-gray-300 text-sm">Competitions Won</div>
                             </div>
                         </div>
@@ -550,9 +548,7 @@
     <footer class="bg-black/80 border-t border-gray-800 py-8">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <div class="flex items-center justify-center space-x-3 mb-4">
-                <div class="p-2 bg-emerald-600 rounded-lg">
-                    <i data-lucide="code-square" class="w-5 h-5 text-white"></i>
-                </div>
+                <img src="profile pic.png" alt="GFG Logo" class="w-8 h-8 rounded-lg object-cover">
                 <span class="text-lg font-bold text-white">GFG Galgotias</span>
             </div>
             <p class="text-gray-400 mb-4">
@@ -607,7 +603,7 @@
                         current = target;
                         clearInterval(timer);
                     }
-                    counter.textContent = Math.floor(current);
+                    counter.textContent = Math.floor(current) + '+';
                 }, 40);
             });
         }
